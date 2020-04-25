@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FingerPrintPredictor</string>
+    <string name="capture">capture</string>
+    <string name="picture">picture</string>
+    <string name="finger_image">Finger Image</string>
+    <string name="finger_print">Fingerprint</string>
+</resources>

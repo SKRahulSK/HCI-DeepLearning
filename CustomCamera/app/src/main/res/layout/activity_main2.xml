@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <Button
+        android:id="@+id/RS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Right Small"
+        android:tag="RS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/LS"
+        app:layout_constraintTop_toBottomOf="@+id/RR" />
+
+    <Button
+        android:id="@+id/LS"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:onClick="OnAnyButtonClick"
+        android:text="Left Small"
+        android:tag="LS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/RS"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LR" />
+
+    <Button
+        android:id="@+id/RR"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Right Ring"
+        android:tag="RR"
+        app:layout_constraintBottom_toTopOf="@+id/RS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/LR"
+        app:layout_constraintTop_toBottomOf="@+id/RM" />
+
+    <Button
+        android:id="@+id/LR"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Left Ring"
+        android:tag="LR"
+        app:layout_constraintBottom_toTopOf="@+id/LS"
+        app:layout_constraintEnd_toStartOf="@+id/RR"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LM" />
+
+    <Button
+        android:id="@+id/RM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Right Middle"
+        android:tag="RM"
+        app:layout_constraintBottom_toTopOf="@+id/RR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/LM"
+        app:layout_constraintTop_toBottomOf="@+id/RI" />
+
+    <Button
+        android:id="@+id/RI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Right Index"
+        android:tag="RI"
+        app:layout_constraintBottom_toTopOf="@+id/RM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/LI"
+        app:layout_constraintTop_toBottomOf="@+id/RT" />
+
+    <Button
+        android:id="@+id/LM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Left Middle"
+        android:tag="LM"
+        app:layout_constraintBottom_toTopOf="@+id/LR"
+        app:layout_constraintEnd_toStartOf="@+id/RM"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LI" />
+
+    <Button
+        android:id="@+id/LI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Left Index"
+        android:tag="LI"
+        app:layout_constraintBottom_toTopOf="@+id/LM"
+        app:layout_constraintEnd_toStartOf="@+id/RI"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LT" />
+
+    <Button
+        android:id="@+id/RT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Right Thumb"
+        android:tag="RT"
+        app:layout_constraintBottom_toTopOf="@+id/RI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/LT"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/LT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAnyButtonClick"
+        android:text="Left Thumb"
+        android:tag="LT"
+        app:layout_constraintBottom_toTopOf="@+id/LI"
+        app:layout_constraintEnd_toStartOf="@+id/RT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+</android.support.constraint.ConstraintLayout>

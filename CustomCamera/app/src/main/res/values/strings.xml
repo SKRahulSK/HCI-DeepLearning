@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CustomCamera</string>
+    <string name="name">Name</string>
+    <string name="create">Create</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="button">Button</string>
+    <string name="capture">capture</string>
+    <string name="next">Next</string>
+</resources>
