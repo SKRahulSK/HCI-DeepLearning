@@ -1,5 +1,5 @@
 # HCI-DeepLearning
-Project on Fingerprint prediction using Deep learning
+Deep Learning Project on Fingerprint prediction using finger images
 
 In this project we have three main parts
 1) Convolutional Neural Network architecture to learn and predict the fingerprint of a given finger image.
